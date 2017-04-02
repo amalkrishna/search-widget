@@ -1,0 +1,34 @@
+{
+  "name": "zoomcar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
+    "build:prod": "webpack -p && cp src/index.html dist/index.html"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Amal Krishna",
+  "dependencies": {
+    "css-loader": "^0.28.0",
+    "react": "^15.2.1",
+    "react-datepicker": "^0.44.0",
+    "react-dom": "^15.2.1",
+    "style-loader": "^0.16.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.22.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "url-loader": "^0.5.8",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
